@@ -1,0 +1,54 @@
+/* Brand Color System */
+:root {
+  --brand-600: #0F397D;
+  --brand-500: #124598;
+  --brand-400: #4080E7;
+  --brand-300: #6498EC;
+  --bg-soft: #F7FAFF;
+  --mint: #7AD5DB;
+}
+
+/* Brand Gradients */
+.gradient-brand {
+  background: linear-gradient(135deg, var(--brand-600) 0%, var(--brand-400) 100%);
+}
+
+.gradient-brand-light {
+  background: linear-gradient(135deg, var(--brand-400) 0%, var(--brand-300) 100%);
+}
+
+.gradient-mint {
+  background: linear-gradient(135deg, var(--brand-400) 0%, var(--mint) 100%);
+}
+
+/* Text Gradients */
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--brand-600) 0%, var(--brand-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Brand Shadows */
+.shadow-brand {
+  box-shadow: 0 4px 12px rgba(15, 57, 125, 0.15);
+}
+
+.shadow-brand-lg {
+  box-shadow: 0 8px 24px rgba(15, 57, 125, 0.2);
+}
+
+.shadow-brand-xl {
+  box-shadow: 0 12px 32px rgba(15, 57, 125, 0.25);
+}
+
+/* Hover Effects */
+.hover-brand {
+  transition: all 0.3s ease;
+}
+
+.hover-brand:hover {
+  background-color: var(--brand-500);
+  box-shadow: 0 6px 16px rgba(15, 57, 125, 0.3);
+  transform: translateY(-2px);
+}
